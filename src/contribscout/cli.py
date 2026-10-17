@@ -124,8 +124,7 @@ def cmd_doctor(args: argparse.Namespace) -> int:
     # 4. Authentication Token
     token = resolve_github_token()
     if token:
-        masked = token[:4] + "..." + token[-4:] if len(token) > 8 else "***"
-        print(f"✓ GitHub Token: Detected ({masked})")
+        print("✓ GitHub Token: Detected (authenticated)")
     else:
         print("! GitHub Token: None detected (rate limits limited to 60 req/hr; set GITHUB_TOKEN for 5,000 req/hr)")
 

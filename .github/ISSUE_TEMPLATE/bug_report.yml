@@ -1,0 +1,47 @@
+name: Bug Report
+description: File a bug report to help improve ContribScout
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report an issue! Please ensure no sensitive information or tokens are included in your report.
+  - type: input
+    id: version
+    attributes:
+      label: ContribScout Version
+      description: What version of ContribScout are you running? (Run `contribscout version`)
+      placeholder: e.g. 0.1.0
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating System & Python Version
+      placeholder: e.g. macOS Sonoma 14.5, Python 3.11.9
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the bug and what went wrong.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Steps or commands to reproduce the behavior.
+      placeholder: |
+        1. Run `contribscout scan --profile ...`
+        2. Observe error ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen instead?
+    validations:
+      required: true

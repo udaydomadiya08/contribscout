@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing and Coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.cover
+.hypothesis/
+
+# ContribScout local data and generated reports
+.contribscout/
+history.json
+*.tmp
+reports/*.json
+reports/*.html
+reports/*.md
+!reports/.gitkeep
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Secrets and local configurations
+.env
+*.pem
+*.key
+
+# User-owned personal profiles (templates remain in config/ and examples/)
+/profile.yaml
+/contribscout.yaml
+/.contribscout.yaml
+*.local.yaml

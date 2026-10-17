@@ -1,0 +1,57 @@
+# ==============================================================================
+# ContribScout - Search & Discovery Configuration
+# ==============================================================================
+# Defines search presets, default labels, and query construction heuristics.
+# ==============================================================================
+
+# Common label synonyms recognized across popular open source repositories
+label_mappings:
+  good_first_issue:
+    - "good first issue"
+    - "good-first-issue"
+    - "beginner friendly"
+    - "easy"
+    - "starter"
+    - "first-timers-only"
+    - "up-for-grabs"
+  help_wanted:
+    - "help wanted"
+    - "help-wanted"
+    - "contributions welcome"
+  bug:
+    - "bug"
+    - "defect"
+    - "fix"
+    - "issue"
+  performance:
+    - "performance"
+    - "perf"
+    - "speed"
+    - "optimization"
+    - "memory"
+  testing:
+    - "tests"
+    - "testing"
+    - "coverage"
+    - "test"
+  documentation:
+    - "documentation"
+    - "docs"
+    - "doc"
+  dx:
+    - "developer-experience"
+    - "dx"
+    - "tooling"
+    - "ci"
+
+# Search query generation templates
+query_templates:
+  - "is:issue is:open label:\"{label}\" language:{language} sort:updated-desc"
+  - "is:issue is:open {keyword} language:{language} stars:>{min_stars} sort:updated-desc"
+  - "is:issue is:open topic:{topic} language:{language} sort:updated-desc"
+
+# Default items fetched per API search page (max 100 on GitHub API, default 30)
+per_page: 30
+
+# Maximum days since last update for an issue to be included in discovery
+max_issue_inactivity_days: 180

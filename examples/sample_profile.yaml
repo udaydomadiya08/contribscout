@@ -1,0 +1,62 @@
+# ContribScout Sample Profile
+# See config/profile.example.yaml for all options.
+
+languages:
+  python: advanced
+  javascript: intermediate
+  typescript: beginner
+
+frameworks:
+  - fastapi
+  - pytorch
+  - pytest
+  - opencv
+  - numpy
+
+interests:
+  - ai/ml
+  - developer tools
+  - automation
+  - computer vision
+  - nlp
+
+contribution_types:
+  - bug
+  - performance
+  - testing
+  - dx
+  - feature
+  - good-first-issue
+
+experience_level: intermediate
+hours_per_week: 5.0
+preferred_duration: medium
+desired_difficulty: intermediate
+
+learning_goals:
+  - asyncio
+  - test coverage and benchmarking
+  - agent architecture
+
+portfolio_goals:
+  - impactful merged open-source PRs
+
+min_stars: 50
+max_stars: null
+maturity: any
+priority_repos: []
+priority_orgs: []
+exclude_repos: []
+exclude_orgs: []
+exclude_topics:
+  - tutorial
+  - homework
+exclude_labels:
+  - wontfix
+  - invalid
+  - duplicate
+
+min_recent_activity_days: 90
+max_candidates: 30
+api_budget_requests: 50
+rate_limit_pause_seconds: 1.0

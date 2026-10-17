@@ -1,0 +1,36 @@
+# ==============================================================================
+# ContribScout - Scoring Engine Configuration
+# ==============================================================================
+# This file defines the default weights and thresholds for the transparent
+# 0-10 scoring engine.
+#
+# All weights must be non-negative. If the sum does not equal 1.0, they will
+# be normalized automatically and explained in the final report.
+# ==============================================================================
+
+weights:
+  practical_usefulness: 0.25
+  feasibility: 0.20
+  technical_depth: 0.20
+  maintainer_responsiveness: 0.15
+  learning_and_portfolio: 0.10
+  repository_health: 0.10
+
+# Minimum score threshold (0-10) for an opportunity to be recommended
+minimum_recommendation_score: 4.5
+
+# Confidence score adjustments:
+# When critical metadata is missing, a penalty is applied to avoid giving
+# unverified or poorly-specified issues an artificially high score.
+confidence_penalties:
+  missing_issue_body: 2.5
+  vague_description: 1.5
+  unclear_reproduction: 1.0
+  no_activity_history: 1.0
+  unverified_maintainer_responsiveness: 0.5
+  unrecognized_license: 0.5
+
+# High / Medium / Low confidence thresholds based on evidence density
+confidence_thresholds:
+  high: 0.75
+  medium: 0.50

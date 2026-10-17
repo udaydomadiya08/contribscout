@@ -1,0 +1,135 @@
+# ==============================================================================
+# ContribScout - Developer Profile Configuration
+# ==============================================================================
+# This configuration customizes which open-source opportunities ContribScout
+# discovers, evaluates, and ranks for you.
+#
+# No secrets should be stored in this file. Authentication tokens should be
+# provided via environment variables (GITHUB_TOKEN) or the GitHub CLI (gh).
+# ==============================================================================
+
+# Programming languages and your self-assessed proficiency.
+# Proficiency levels: beginner, intermediate, advanced, expert
+languages:
+  python: advanced
+  javascript: intermediate
+  typescript: beginner
+  bash: intermediate
+
+# Frameworks, libraries, tools, and environments you work with or know.
+frameworks:
+  - fastapi
+  - pytorch
+  - pytest
+  - opencv
+  - huggingface
+  - docker
+  - numpy
+  - pandas
+
+# Technical domains and engineering interests.
+# Options: ai/ml, developer tools, backend, frontend, security, infrastructure,
+# data engineering, documentation, accessibility, performance, testing, scientific computing
+interests:
+  - ai/ml
+  - developer tools
+  - automation
+  - computer vision
+  - nlp
+  - backend
+  - performance
+
+# Preferred types of contributions you are seeking.
+# Options: bug, feature, documentation, performance, testing, dx, refactoring, good-first-issue
+contribution_types:
+  - bug
+  - performance
+  - testing
+  - dx
+  - feature
+  - good-first-issue
+
+# Your overall open-source experience level.
+# Options: beginner, intermediate, advanced, expert
+experience_level: intermediate
+
+# Approximate hours you can commit per week.
+hours_per_week: 5.0
+
+# Preferred task duration:
+# quick (< 3 hours), medium (3-10 hours), deep (10+ hours), any
+preferred_duration: medium
+
+# Desired issue difficulty filter:
+# beginner, intermediate, advanced, any
+desired_difficulty: intermediate
+
+# Skills, libraries, or architectures you actively want to learn or improve in.
+learning_goals:
+  - asyncio and concurrent programming
+  - computer vision inference optimization
+  - robust test suites and mocking patterns
+  - cli developer experience design
+
+# Career and portfolio priorities.
+# Examples: impactful bug fixes, architectural contributions, public recognition
+portfolio_goals:
+  - visible merged PRs in reputable open-source ecosystems
+  - performance improvements with verifiable benchmarks
+  - non-trivial bug fixes with regression tests
+
+# Repository size and maturity constraints.
+# Minimum stars to ensure project has community interest and maintainers.
+min_stars: 50
+# Maximum stars (null or number) if you prefer smaller/growing repositories.
+max_stars: null
+
+# Project maturity: emerging, growing, mature, any
+maturity: any
+
+# Specific repositories or organizations you want to prioritize (scanned first).
+priority_repos: []
+# Example:
+#   - huggingface/transformers
+#   - tiangolo/fastapi
+#   - pydantic/pydantic
+
+priority_orgs: []
+# Example:
+#   - pallets
+#   - pydantic
+
+# Repositories, organizations, topics, or labels you want to ignore.
+exclude_repos: []
+# Example:
+#   - some-org/deprecated-repo
+
+exclude_orgs: []
+
+exclude_topics:
+  - tutorial
+  - homework
+  - course
+  - interview-practice
+
+exclude_labels:
+  - wontfix
+  - invalid
+  - duplicate
+  - question
+  - blocked
+  - needs-reproduction
+
+# Repository activity freshness requirement (in days).
+# Discard repositories that haven't been pushed to within this window.
+min_recent_activity_days: 90
+
+# Search limits and budget protection.
+# Maximum candidate opportunities to fetch and evaluate per run.
+max_candidates: 30
+
+# Maximum GitHub API requests per scan run (prevents exhausting rate limits).
+api_budget_requests: 60
+
+# Pause between paginated API calls (seconds) to be a polite API client.
+rate_limit_pause_seconds: 1.0
